@@ -62,16 +62,6 @@ ros install \
     -p ${DEVICE_NAME}p2 \
     --force \
     --no-reboot
-# ros install -t gptsyslinux -c "${CLOUD_CONFIG_FILE_PATH}" -d ${DEVICE_NAME} -p ${DEVICE_NAME}p2 <<EOF
-# y
-# n
-# EOF
-
-# If accidentally rebooted run the following:
-# mkdir /mnt/large
-# mount -t ext4 ${DEVICE_NAME}p2 /mnt/large
-# mkdir /tmp/d
-# mount -t vfat ${DEVICE_NAME}p1 /tmp/d
 
 echo
 echo "Modifying grub config"

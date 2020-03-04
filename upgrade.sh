@@ -25,6 +25,7 @@ echo
 echo "Copying OS files"
 find "${P2_DIR}/boot" | grep -i -E "initrd|linuz" | xargs -I '{}' cp '{}' "${P1_DIR}/boot"
 
+# Get file names and versions
 echo
 echo "Gathering current and previous files and versions"
 CURRENT_KERNEL_FILE="$(grep -i -E "vmlinuz" ${P2_DIR}/boot/linux-current.cfg | cut -d'/' -f2 | sed -e 's/\r//g')"
@@ -35,6 +36,7 @@ PREVIOUS_KERNEL_FILE="$(grep -i -E "vmlinuz" ${P2_DIR}/boot/linux-previous.cfg |
 PREVIOUS_INITRD_FILE="$(grep -i -E "initrd" ${P2_DIR}/boot/linux-previous.cfg | cut -d'/' -f2 | sed -e 's/\r//g')"
 PREVIOUS_VERSION="$(echo ${PREVIOUS_INITRD_FILE} | cut -d'-' -f2)"
 
+# Update grub
 GRUB_CFG_PATH="${P1_DIR}/boot/grub/grub.cfg"
 echo
 echo "Modifying grub config"
@@ -62,3 +64,6 @@ menuentry "Install Rancher" {
     initrd   /boot/$CURRENT_INITRD_FILE
 }
 EOF
+
+echo
+echo "Upgrade (should be) complete, reboot."
