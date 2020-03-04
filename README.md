@@ -1,6 +1,13 @@
 # ROS UEFI
 ### Scripts for installing and upgrading Rancher OS on a UEFI system
-Installation was tested with Rancher OS 1.5.4 and upgrading was tested with Rancher OS 1.5.5. All scripts were tested against an Odroid H2 SBC with an NVMe M.2 drive as the installation target.
+
+`make-uefi.sh` was tested in WSL Debian
+
+`install.sh` was tested with Rancher OS 1.5.4 ISO
+
+`upgrade.sh` was tested with Rancher OS 1.5.5 default console
+
+Installation target was an Odroid H2 SBC with an NVMe M.2 drive.
 <br />
 <br />
 
