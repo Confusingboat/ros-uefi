@@ -45,4 +45,8 @@ Once live inside the Rancher OS install image, make sure the device you're insta
 
 **1. Copy** the `upgrade.sh` script to your Rancher OS installation. I just drop it in the home directory.
 
-**2. Run** `sudo ./upgrade.sh`
+**2. Set**
+
+`DEVICE_NAME` to the name of the device Rancher OS is installed to.
+
+**3. Run** `sudo ./upgrade.sh`
