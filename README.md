@@ -1,11 +1,11 @@
 # ROS UEFI
-## Scripts for installing and upgrading Rancher OS on a UEFI system
-Installation was tested with Rancher OS 1.5.4 and upgrading was tested with Rancher OS 1.5.5
+### Scripts for installing and upgrading Rancher OS on a UEFI system
+Installation was tested with Rancher OS 1.5.4 and upgrading was tested with Rancher OS 1.5.5. All scripts were tested against an Odroid H2 SBC with an NVMe M.2 drive as the installation target.
 <br />
 
-## `> make-uefi.sh`
+### `> make-uefi.sh`
 
-### This script prepares the directories and files necessary to create a UEFI-bootable USB installer for Rancher OS.
+#### This script prepares the directories and files necessary to create a UEFI-bootable USB installer for Rancher OS.
 
 **1. Set** (optional)
 
@@ -18,9 +18,9 @@ Installation was tested with Rancher OS 1.5.4 and upgrading was tested with Ranc
 <br />
 <br />
 
-## `> install.sh`
+### `> install.sh`
 
-### This script installs Rancher OS from the prepared USB installer.
+#### This script installs Rancher OS from the prepared USB installer.
 
 **1. Copy** the `install.sh` script to your USB installer drive.
 
@@ -39,9 +39,9 @@ Once live inside the Rancher OS install image, make sure the device you're insta
 <br />
 <br />
 
-## `> upgrade.sh`
+### `> upgrade.sh`
 
-### This script will upgrade an existing Rancher OS installation that was installed using this method to the latest version.
+#### This script will upgrade an existing Rancher OS installation that was installed using this method to the latest version.
 
 **1. Copy** the `upgrade.sh` script to your Rancher OS installation. I just drop it in the home directory.
 
