@@ -6,9 +6,9 @@
 apt update
 apt install wget p7zip-full -y
 
-UB_ISO_URL="http://releases.ubuntu.com/18.04.4/ubuntu-18.04.4-live-server-amd64.iso"
+UB_ISO_URL="http://releases.ubuntu.com/focal/ubuntu-20.04-live-server-amd64.iso"
 UB_ISO_FILE_NAME="ubuntu.iso"
-ROS_ISO_URL="https://github.com/rancher/os/releases/download/v1.5.5/rancheros.iso"
+ROS_ISO_URL="https://github.com/rancher/os/releases/download/v1.5.6/rancheros.iso"
 ROS_ISO_FILE_NAME="rancheros.iso"
 DOWNLOAD_DIR="."
 TEMP_DIR="./tmp"
